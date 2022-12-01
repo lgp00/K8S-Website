@@ -18,6 +18,6 @@
     # Wait for pod to be running
     echo "Waiting up to 5s for pods to be running..."
     sleep 5s
-    echo -e "\n\nAutomation complete!\n"
+    echo -e "Automation complete!"
 }
 ```
