@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2022-12-01T15:52:49Z"
+  labels:
+    app: website
+  name: website-service
+  namespace: default
+  resourceVersion: "9353"
+  uid: fc987f6a-3678-42ca-b748-4c1cd20b2033
+spec:
+  clusterIP: 10.110.114.205
+  clusterIPs:
+  - 10.110.114.205
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 31344
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: website
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer:
+    ingress:
+    - hostname: localhost
