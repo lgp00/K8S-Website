@@ -21,7 +21,12 @@
     # Wait for pod to be running
     echo "Waiting up to 10 for website deploy to be running..."
     kubectl wait --for=condition=available deployment website --timeout=10s
+    echo " you can now access the website at http://localhost:(nodeport/TCP)" 
+    kubectl describe svc website |grep nodeport -i | grep /TCP
 
     echo -e "\n\nAutomation complete! \n"
+
+    echo -e "to find the home local network ip address of the node, run the following command: \n Linux \n ifconfig | grep 'inet' | grep -v 127.0.0.1 \n Windows \n ipconfig \n"
 }
+
 ```
