@@ -61,4 +61,19 @@ Quick Docker setup:
 }
 ```
 
-</detils>
+</details>
+<details>
+ <summary>Automation 🤖 copy & paste easy delete deploy + service 🗑️</summary>
+
+```bash
+{
+    ### DEPLOYMENT ###
+    kubectl delete deployments.apps website 
+
+    ### SERVICE ###
+    kubectl delete service website-service
+
+    echo -e "\n\nAutomation complete! Deployment and Pods deleted\n"
+}
+```
+</details>
