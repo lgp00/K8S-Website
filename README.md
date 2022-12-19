@@ -20,7 +20,7 @@ kubectl is installable on a variety of Linux platforms, macOS and Windows. Find 
 
 ### [x] DOCKER
 
-Docker is an open platform for developing, shipping, and running applications.
+Docker is an open platform for developing, shipping, and running applications. Find your preferred operating system below.
 
 -  [Install Docker on Linux](https://docs.docker.com/desktop/install/linux-install/)
 -  [Install Docker on macOS](https://docs.docker.com/desktop/install/mac-install/)
